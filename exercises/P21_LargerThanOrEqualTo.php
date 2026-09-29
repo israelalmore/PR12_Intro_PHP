@@ -4,15 +4,19 @@ class P21_LargerThanOrEqualTo
 {
     public function main(): void
     {
-        // Write your code here
-        // Prompt the user for input
+        echo "Give the first number: ";
+        $num = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
 
-        // Get input from the user
-        
-        // Prompt the user for input
-        
-        // Get input from the user
+        echo "Give the second number: ";
+        $num2 = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
 
-        // Check year value
+        if ($num > $num2) {
+            echo "Greater number is: $num";
+        }
+        if ($num < $num2) {
+            echo "Greater number is: $num2";
+        } else {
+            echo "The numbers are equal!";
+        }
     }
 }
