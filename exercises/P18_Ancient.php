@@ -9,9 +9,10 @@ class P18_Ancient
         echo "Give a year: ";
 
         // Get input from the user
-        $year = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        $year = (int) trim(fgets($GLOBALS['STDIN'] ?? STDIN));
 
-        // Check year value
-     
+        if ($year < 2015) {
+            echo "Ancient history!";
+        }
     }
 }
