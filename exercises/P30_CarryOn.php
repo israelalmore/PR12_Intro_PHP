@@ -4,7 +4,11 @@ class P30_CarryOn
 {
     public function main(): void
     {
-        // Write your code here
-       
+        $value = null;
+
+        while ($value != "no") {
+            echo "Shall we carry on?";
+            $value = trim(fgets($GLOBALS['STDIN'] ?? STDIN));
+        }
     }
 }
